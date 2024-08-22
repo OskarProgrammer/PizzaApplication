@@ -56,12 +56,17 @@ const router = createBrowserRouter(
                 element={<AdminLayout/>}
                 errorElement={<AdminError/>}
                 loader={adminLayoutLoader}>
-            <Route path="users" 
+                <Route path="users" 
                    element={<UsersPage/>}
                    loader={usersListLoader}/>
-            <Route path="orders" 
+               <Route path="orders" 
                    element={<OrdersList/>}
                    loader={ordersListLoader}/>
+                <Route  path=":id"
+                        element={<OrdersDetails/>}
+                        loader={ordersDetailsLoader}
+                        errorElement={<AdminError/>}  
+                        />   
         </Route>
     </Route>
   ))

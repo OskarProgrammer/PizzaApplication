@@ -58,24 +58,19 @@
   "baskets": [],
   "orders": [
     {
-      "id": "ba2a8300-e919-4d46-a759-d093e047d9fe",
+      "id": "1",
       "pizzas": [
         {
           "pizzaId": "1",
-          "pizzaSize": "medium",
-          "universalId": "ad1ac95f-e836-41b8-8c07-51529d100b3b"
-        },
-        {
-          "pizzaId": "2",
-          "pizzaSize": "medium",
-          "universalId": "5ce296d6-e238-4334-ba70-4a10d85bd47b"
+          "pizzaSize": "large",
+          "universalId": "886fdb78-4faa-4d3c-8179-50b897421978"
         }
       ],
       "city": "s",
       "zipCode": "s",
       "street": "s",
-      "universalOrderId": "3e54e489-b581-49d5-9a33-c58cd0d99696",
-      "status": "Ready"
+      "universalOrderId": "a05a0b7f-4011-4adb-bde7-f9cca2af0d91",
+      "status": "Preparing"
     }
   ]
 }

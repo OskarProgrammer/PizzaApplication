@@ -1,4 +1,4 @@
-import { useLoaderData, Link, redirect} from "react-router-dom"
+import { useLoaderData, Link, redirect, Outlet} from "react-router-dom"
 import { fetchDataFromEndpoint } from "../../API functions/functions"
 import "./OrdersList.css"
 import { useState } from "react"
@@ -70,7 +70,7 @@ export const OrdersList = () => {
             <h1>Orders List</h1>
             {ordersData.map((order)=>(
                 <div className="orderItem">
-                    <Link to={`/${order.universalOrderId}`}>
+                    <Link to={`/adminPanel/${order.universalOrderId}`}>
                         <h3>
                             <p>Order with key :</p>
                             <p>{order.universalOrderId}</p>
