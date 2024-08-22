@@ -18,6 +18,9 @@ import { LogOutError } from './pages/LogOutPage/LogOutError'
 import { basketAction, basketLoader, BasketPage } from './pages/BasketPage/BasketPage'
 import { ordersLoader, OrdersPage } from './pages/OrdersPage/OrdersPage'
 import { OrdersDetails, ordersDetailsLoader } from './pages/OrdersDetails/OrdersDetails'
+import { AdminLayout } from './layouts/AdminLayout/AdminLayout'
+import { usersListLoader, UsersPage } from './pages/UsersPage/UsersPage'
+import { OrdersList, ordersListLoader } from './pages/OrdersList/OrdersList'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +50,15 @@ const router = createBrowserRouter(
                 element={<OrdersDetails/>}
                 loader={ordersDetailsLoader}
                   />  
+        <Route  path="/adminPanel" 
+                element={<AdminLayout/>}>
+            <Route path="users" 
+                   element={<UsersPage/>}
+                   loader={usersListLoader}/>
+            <Route path="orders" 
+                   element={<OrdersList/>}
+                   loader={ordersListLoader}/>
+        </Route>
     </Route>
   ))
 

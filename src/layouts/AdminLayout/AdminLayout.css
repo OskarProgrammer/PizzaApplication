@@ -1,0 +1,20 @@
+.admin-layout {
+    background-color: var(--second-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.admin-layout nav a{
+    background-color: var(--primary-color);
+    color: var(--second-color)
+}
+
+.admin-layout nav a.active {
+    color: var(--second-color);
+    box-shadow: 0rem 0rem 1rem 0.5rem var(--primary-color);
+}
+
+.admin-layout nav a:visited {
+    color: var(--second-color);
+}

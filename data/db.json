@@ -5,26 +5,14 @@
       "password": "root",
       "isAdmin": true,
       "id": "1"
-    },
-    {
-      "id": "2",
-      "name": "Oskar",
-      "password": "123",
-      "isAdmin": false
-    },
-    {
-      "id": "27d4b5b0-4bfb-4e82-8da9-3193953f1ead",
-      "name": "Robert",
-      "password": "xd",
-      "isAdmin": false
     }
   ],
   "currentUser": {
-    "name": "",
-    "password": "",
-    "personId": "",
-    "isAdmin": false,
-    "isLogged": false
+    "name": "Oskar",
+    "password": "root",
+    "personId": "1",
+    "isAdmin": true,
+    "isLogged": true
   },
   "pizzas": [
     {
@@ -68,14 +56,9 @@
       ]
     },
     {
-      "pizzas": [
-        {
-          "pizzaId": "1",
-          "pizzaSize": "medium",
-          "universalId": "33e294ce-e989-48c4-95c7-1dfc49019eb3"
-        }
-      ],
-      "id": "1"
+      "id": "1",
+      "personId": "1",
+      "pizzas": []
     }
   ],
   "orders": [

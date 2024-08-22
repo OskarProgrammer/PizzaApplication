@@ -1,0 +1,25 @@
+.usersList {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.userItem {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 1.2rem;
+    border-radius: 1rem;
+    color: var(--second-color);
+}
+
+.userItem button {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: var(--second-color);
+    border: 0rem;
+    transition: 0.5s ease;
+}
+
+.userItem button:hover {
+    box-shadow: 0rem 0rem 1rem 0.5rem var(--second-color);
+}

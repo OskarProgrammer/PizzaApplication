@@ -15,6 +15,7 @@ export const HomeLayout = () => {
                 {dataFromLoader.isLogged ? "" : <NavLink to="/registrationPage">Sign up</NavLink>}
                 {dataFromLoader.isLogged ? <NavLink to="/ordersPage">Orders</NavLink> : ""}
                 {dataFromLoader.isLogged ? <NavLink to="/basketPage">Basket</NavLink> : ""}
+                {dataFromLoader.isAdmin ? <NavLink to="/adminPanel">Admin Panel</NavLink> : ""}
                 {dataFromLoader.isLogged ? <NavLink to="/logOutPage">Log Out</NavLink> : ""}
             </nav>
             <main>

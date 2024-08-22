@@ -1,0 +1,35 @@
+.ordersList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.orderItem {
+    background-color: var(--primary-color);
+    width: 60%;
+    color: white !important;
+    text-decoration: none;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+}
+
+.orderItem a {
+    color: white;
+}
+
+.orderItem button {
+    margin: 1rem 2rem 0rem 2rem;
+    background-color: white;
+    padding: 1rem;
+    border: 0rem;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+}
+
+.orderItem button:hover {
+    background-color: var(--second-color);
+    box-shadow: 0rem 0rem 1rem 0.4rem var(--second-color);
+}
