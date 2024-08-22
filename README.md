@@ -1,8 +1,6 @@
-# React + Vite
+# Pizza app using react route dom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ordering pizzas, creating accounts, logining, adding to basket, watching your orders status
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project with database in data/db.json
+I recommend reading data/scheme.txt
