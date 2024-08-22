@@ -1,0 +1,21 @@
+.pizza {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 1rem var(--second-color);
+    border-radius: 0.5rem;
+}
+
+.pizza button { 
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    border: 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+}
+
+.pizza button:hover {
+    box-shadow: 0rem 0rem 2rem var(--primary-color);
+}

@@ -1,0 +1,22 @@
+.errorMessage {
+    background-color: var(--second-color);
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.errorMessage a { 
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--second-color);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
+
+.errorMessage a:hover {
+    box-shadow: 0rem 0rem 2rem var(--primary-color);
+}

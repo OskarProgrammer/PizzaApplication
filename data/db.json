@@ -1,0 +1,174 @@
+{
+  "users": [
+    {
+      "name": "Oskar",
+      "password": "root",
+      "isAdmin": true,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Oskar",
+      "password": "123",
+      "isAdmin": false
+    },
+    {
+      "id": "27d4b5b0-4bfb-4e82-8da9-3193953f1ead",
+      "name": "Robert",
+      "password": "xd",
+      "isAdmin": false
+    }
+  ],
+  "currentUser": {
+    "name": "",
+    "password": "",
+    "personId": "",
+    "isAdmin": false,
+    "isLogged": false
+  },
+  "pizzas": [
+    {
+      "id": "1",
+      "name": "Margheritta",
+      "ingredients": [
+        "cheese",
+        "tomato sauce"
+      ],
+      "price": {
+        "large": 20,
+        "medium": 15,
+        "small": 13
+      }
+    },
+    {
+      "id": "2",
+      "name": "Salami",
+      "ingredients": [
+        "cheese",
+        "salami",
+        "tomato sauce"
+      ],
+      "price": {
+        "large": 30,
+        "medium": 20,
+        "small": 15
+      }
+    }
+  ],
+  "baskets": [
+    {
+      "id": "2",
+      "personId": "2",
+      "pizzas": [
+        {
+          "pizzaId": "2",
+          "pizzaSize": "large",
+          "universalId": "12123131"
+        }
+      ]
+    },
+    {
+      "pizzas": [
+        {
+          "pizzaId": "1",
+          "pizzaSize": "medium",
+          "universalId": "33e294ce-e989-48c4-95c7-1dfc49019eb3"
+        }
+      ],
+      "id": "1"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "personId": "1",
+      "pizzas": [
+        {
+          "pizzaId": "2",
+          "pizzaSize": "large",
+          "universalId": "12123131"
+        },
+        {
+          "pizzaId": "2",
+          "pizzaSize": "large",
+          "universalId": "12123132131"
+        }
+      ],
+      "city": "s",
+      "zipCode": "s",
+      "street": "s",
+      "universalOrderId": "cbb5d886-433a-402b-8a31-ce46d74c38e4",
+      "status": "Preparing"
+    },
+    {
+      "id": "1",
+      "pizzas": [
+        {
+          "pizzaId": "1",
+          "pizzaSize": "large",
+          "universalId": "1b3574da-d610-4e5b-8ce7-63bb5c9f64ee"
+        }
+      ],
+      "city": "s",
+      "zipCode": "s",
+      "street": "s",
+      "universalOrderId": "ff0a8580-416b-4f5d-98f8-e7573f5e4af5",
+      "status": "Preparing"
+    },
+    {
+      "id": "1",
+      "pizzas": [
+        {
+          "pizzaId": "2",
+          "pizzaSize": "medium",
+          "universalId": "70b6045c-8246-40d8-9906-47b77c214f0f"
+        },
+        {
+          "pizzaId": "1",
+          "pizzaSize": "small",
+          "universalId": "f269efe4-3ef3-474d-bc97-040c634687ea"
+        }
+      ],
+      "city": "s",
+      "zipCode": "s",
+      "street": "s",
+      "universalOrderId": "013d0104-3b8f-4c16-8e6b-8d3b8b895b2d",
+      "status": "Preparing"
+    },
+    {
+      "id": "27d4b5b0-4bfb-4e82-8da9-3193953f1ead",
+      "pizzas": [
+        {
+          "pizzaId": "1",
+          "pizzaSize": "small",
+          "universalId": "1b204f05-b314-47e2-b069-5daf40eab301"
+        }
+      ],
+      "city": "s",
+      "zipCode": "s",
+      "street": "s",
+      "universalOrderId": "ad8037c6-cb81-4c58-8aa8-afd2207ef0a1",
+      "status": "Preparing"
+    },
+    {
+      "id": "27d4b5b0-4bfb-4e82-8da9-3193953f1ead",
+      "pizzas": [
+        {
+          "pizzaId": "1",
+          "pizzaSize": "large",
+          "universalId": "243ef6ba-d9ae-495e-98d2-9374532d9466"
+        },
+        {
+          "pizzaId": "2",
+          "pizzaSize": "small",
+          "universalId": "21f172a7-5daa-4459-bbbe-11b43828880c"
+        }
+      ],
+      "city": "XD",
+      "zipCode": "XD",
+      "street": "XD",
+      "universalOrderId": "5ed4d108-6fec-4648-b7ce-376f027bb5f1",
+      "status": "Preparing"
+    }
+  ]
+}

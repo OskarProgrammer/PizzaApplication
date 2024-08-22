@@ -1,0 +1,64 @@
+users: [
+    {
+      "name": name
+      "password": password
+      "isAdmin": permissions
+      "id": idOfUser
+    }
+]
+
+currentUser: {
+    "name": name,
+    "password": password,
+    "personId": idOfUser,
+    "isAdmin": permissions,
+    "isLogged": isLogged
+  },
+
+pizzas: [
+    {
+      "id": idOfPizza
+      "name": nameOfPizza
+      "ingredients": [
+        ingredients
+      ],
+      "price": {
+        "large": priceOfLargePizza,
+        "medium": priceOfMediumPizza,
+        "small": priceOfSmallPizza
+      }
+    }
+]
+
+baskets: [
+    {
+      "id": idOfUser
+      "personId": idOfUser
+      "pizzas": [
+        {
+          "pizzaId": idOfPizza
+          "pizzaSize": sizeOfPizza (large, medium, small)
+          "universalId" : universalIdOfThisPizza
+        }
+      ]
+    }
+]
+
+orders: [
+    {
+      "id": idOfUser
+      "personId": idOfUser
+      "pizzas": [
+        {
+          "pizzaId": idOfPizza
+          "pizzaSize": sizeOfPizza (large, medium, small)
+          "universalId": universalIdOfThisPizza
+        }
+      ],
+      "city": city
+      "zipCode": zip code
+      "street": street (not NECESSERY)
+      "universalOrderId": universalIdOfThisOrder
+      "status": status (preparing, making, ready)
+    }
+]

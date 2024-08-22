@@ -1,0 +1,47 @@
+.registrationForm {
+    background-color: var(--second-color);
+    box-shadow: 0rem 0rem 0.5rem var(--second-color);
+    color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+form input { 
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+form button { 
+    width: 50%;
+    margin: auto;
+    margin-top:1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 0rem;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    box-shadow: 0rem 0rem 1rem var(--primary-color);
+    transition: 0.5s ease;
+}
+
+form button:hover {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}

@@ -1,0 +1,44 @@
+
+
+.root-layout header {
+    margin: 3rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px var(--second-color);
+    color: var(--second-color);
+}
+
+.root-layout nav {
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: right;
+}
+
+.root-layout nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: var(--second-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.root-layout nav a.active {
+    box-shadow: 0px 0px 15px var(--second-color)
+}
+
+.root-layout nav a:visited {
+    color: black;
+}
+
+.root-layout main {
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.root-layout nav a:first-child {
+    margin-right:auto;
+}

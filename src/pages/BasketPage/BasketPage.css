@@ -1,0 +1,35 @@
+.basket {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.basketContainer {
+    margin: 0rem 2rem 0rem 2rem;
+    display: flex;
+    justify-content: left;
+}
+
+.basketItems,  .basketPayment {
+    width: 50%;
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    
+}
+
+.basketPayment form button {
+    background-color: var(--second-color);
+    color: var(--primary-color)
+}
+
+.basketPayment form button:hover {
+    box-shadow: 0rem 0rem 1rem var(--second-color);
+}
+
+.basketPayment form p {
+    color: red;
+}
