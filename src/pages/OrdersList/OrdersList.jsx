@@ -9,10 +9,12 @@ export const OrdersList = () => {
 
     const changeStatus = async (newStatus, orderInfo) => {
         let newOrders = []
+        let newOrderContent = {}
 
         ordersData.map((order)=>{
             if (order.universalOrderId == orderInfo.universalOrderId){
                 order.status = newStatus
+                newOrderContent = order
             }
             newOrders.push(order)
         })
@@ -20,9 +22,7 @@ export const OrdersList = () => {
         ordersData = newOrders
         setOrdersData(ordersData)
 
-        let newOrderContent = {
-            status: newStatus
-        }
+        newOrderContent.status = newStatus
 
         const requestOptions = {
             method: "PUT",
@@ -31,7 +31,7 @@ export const OrdersList = () => {
         }
 
         try {
-            await fetch(`http://localhost:3000/orders?universalOrderId="${orderInfo.universalOrderId}"`,requestOptions)
+            await fetch(`http://localhost:3000/orders/${orderInfo.id}`,requestOptions)
         }catch {
             throw Error("Can not put informations into the database")
         }
@@ -56,8 +56,8 @@ export const OrdersList = () => {
             headers: { "Content-Type": "application/json" }
         }
         try {
-            await axios(`http://localhost:3000/orders?universalOrderId="${orderInfo.universalOrderId}"`,requestOptions)
-            // await fetch(`http://localhost:3000/orders?universalOrderId="${orderInfo.universalOrderId}"`,requestOptions)
+            
+            await fetch(`http://localhost:3000/orders/${orderInfo.id}`,requestOptions)
         }catch {
             throw Error("Can not delete the order")
         }
