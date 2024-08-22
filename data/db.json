@@ -11,6 +11,12 @@
       "name": "Robert",
       "password": "123",
       "isAdmin": false
+    },
+    {
+      "id": "abbfb951-02c9-46d3-9c1c-142c9d6f9ffd",
+      "name": "Oskar",
+      "password": "123",
+      "isAdmin": false
     }
   ],
   "currentUser": {

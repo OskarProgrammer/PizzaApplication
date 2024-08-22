@@ -18,9 +18,10 @@ import { LogOutError } from './pages/LogOutPage/LogOutError'
 import { basketAction, basketLoader, BasketPage } from './pages/BasketPage/BasketPage'
 import { ordersLoader, OrdersPage } from './pages/OrdersPage/OrdersPage'
 import { OrdersDetails, ordersDetailsLoader } from './pages/OrdersDetails/OrdersDetails'
-import { AdminLayout } from './layouts/AdminLayout/AdminLayout'
+import { AdminLayout, adminLayoutLoader } from './layouts/AdminLayout/AdminLayout'
 import { usersListLoader, UsersPage } from './pages/UsersPage/UsersPage'
 import { OrdersList, ordersListLoader } from './pages/OrdersList/OrdersList'
+import { AdminError } from './pages/AdminError/AdminError'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -49,9 +50,12 @@ const router = createBrowserRouter(
         <Route  path=":id"
                 element={<OrdersDetails/>}
                 loader={ordersDetailsLoader}
-                  />  
+                errorElement={<AdminError/>}  
+                /> 
         <Route  path="/adminPanel" 
-                element={<AdminLayout/>}>
+                element={<AdminLayout/>}
+                errorElement={<AdminError/>}
+                loader={adminLayoutLoader}>
             <Route path="users" 
                    element={<UsersPage/>}
                    loader={usersListLoader}/>

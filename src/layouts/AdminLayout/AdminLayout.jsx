@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom"
 import "./AdminLayout.css"
+import { fetchDataFromEndpoint } from "../../API functions/functions"
 
 
 export const AdminLayout = () => {
@@ -18,4 +19,14 @@ export const AdminLayout = () => {
                 
         </>
     )
+}
+
+export const adminLayoutLoader = async () => {
+    const currentUser = await fetchDataFromEndpoint("http://localhost:3000/currentUser")
+
+    if (!currentUser.isAdmin){
+        throw Error("No priviliges to get to admin panel")
+    }
+
+    return ""
 }
